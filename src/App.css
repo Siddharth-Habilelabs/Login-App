@@ -1,0 +1,13 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box div {
+    margin-left: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
