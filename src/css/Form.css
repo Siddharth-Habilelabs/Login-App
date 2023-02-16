@@ -1,0 +1,64 @@
+.Form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    min-height: 624px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 320px;
+}
+
+.box div {
+    margin-left: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+input[type=text],
+[type=password],
+#r_pin {
+    width: 250px;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(207, 214, 219);
+}
+
+
+span,
+i {
+    cursor: pointer;
+}
+
+.box_btn {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button {
+    width: 100px;
+    background-color: #284653;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}

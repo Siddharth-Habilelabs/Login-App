@@ -1,30 +1,17 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
-
 import './App.css';
-import { Login } from './components/Login';
-import { Register } from './components/Register';
+import { Form } from './components/Form';
+
 
 function App() {
     return (
         <div className="App">
-            <Router>
-                <Routes>
-                    <Route
-                        path='/'
-                        element={<Navigate to='/login' />}
-                    />
-
-                    <Route
-                        path='/login'
-                        element={<Login />}
-                    />
-
-                    <Route
-                        path='/register'
-                        element={<Register />}
-                    />
-                </Routes>
-            </Router>
+            <div className="image">
+                <div className="image_box">
+                    <img src="/assets/login_image.svg" alt="" />
+                </div>
+            </div>
+            
+            <Form />
         </div>
     );
 }

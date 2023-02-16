@@ -1,0 +1,18 @@
+/* REGISTER FORM */
+#register_form {
+    gap: 1rem;
+}
+
+.r_register_btn {
+    padding-left: 20px;
+}
+
+#register .generate_pin {
+    position: relative;
+}
+
+#register .generate_icon {
+    position: absolute;
+    right: 11%;
+    font-size: 20px;
+}

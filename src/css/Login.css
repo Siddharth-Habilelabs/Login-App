@@ -1,0 +1,10 @@
+/* LOGIN FORM */
+#login_form {
+    gap: 2rem;
+}
+
+#login_form .show_pin,
+#login_form .show_pass {
+    display: flex;
+    justify-content: space-between;
+}
