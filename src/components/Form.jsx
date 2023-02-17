@@ -1,31 +1,19 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import { useLocation } from 'react-router-dom';
 
 import { Login } from '../components/Login'
 import { Register } from '../components/Register'
 import '../css/Form.css'
 
 export const Form = () => {
+    const location = useLocation();
+    const isLoginPage = location.pathname === '/login';
+    const isRegisterPage = location.pathname === '/register';
+
     return (
         <div className="form">
-            <Router>
-                <Routes>
-                    <Route
-                        path='/'
-                        element={<Navigate to='/login' />}
-                    />
-
-                    <Route
-                        path='/login'
-                        element={<Login />}
-                    />
-
-                    <Route
-                        path='/register'
-                        element={<Register />}
-                    />
-                </Routes>
-            </Router>
+            {isLoginPage && <Login />}
+            {isRegisterPage && <Register />}
         </div>
     )
 }

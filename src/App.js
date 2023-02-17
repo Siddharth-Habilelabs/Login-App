@@ -9,7 +9,7 @@ function App() {
                     <img src="/assets/login_image.svg" alt="" />
                 </div>
             </div>
-            
+
             <Form />
         </div>
     );
