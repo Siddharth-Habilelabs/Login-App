@@ -16,3 +16,7 @@
     right: 11%;
     font-size: 20px;
 }
+
+#register .register_btn {
+    width: 120px;
+}
